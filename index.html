@@ -1,116 +1,21 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Phong Bì Tương Tác</title>
+<title>Thiệp Mừng năm mới</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <article>
-        <div class="envelope-container">
-            <!-- Tin nhắn đầu tiên -->
-            <div class="message message-1" id="message-1">
-                <h1>Anh xin lỗi em nhé</h1>
-                <p>Có quà cho em nè, bấm vào hình trái tim nhé <3 </p>
-            </div>
-            <!-- Tin nhắn thứ hai -->
-            <div class="message message-2" id="message-2">
-                <h2>Anh yêu em nhiều lắm!</h2>
-                 <p>Em có 1 cuộc hẹn bấm vào link dưới nha </p>
-            </div>
-            <!-- Nút đóng phong bì -->
-            <button class="close-btn" id="close-btn" onclick="toggleEnvelope()">Đóng phong bì</button>
-            <!-- Nút trái tim -->
-            <button class="heart-btn" id="heart-btn" onclick="toggleEnvelope()">&#10084; 
-                <span class="heart-btn-text">Bấm đây nè</span>
-            </button>
-            <div class="envelope-flap">
-                <svg class="inner">
-                    <polygon class="inner-polygon" id="inner-polygon" points="5,0 345,0 175,145"></polygon>
-                </svg>
-                <svg class="outer" id="outer">
-                    <polygon class="outer-polygon" points="5,150 345,150 175,0"></polygon>
-                </svg>
-                <div class="floating-hearts">
-                    <div class="hearts-row row-10">
-                        <div>
-                            <i class="ri-heart-fill"></i>
-                        </div>
-                    </div>
-                    <div class="hearts-row row-9">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-8">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-7">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-6">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-5">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-4">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-3">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-2">
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                    <div class="hearts-row row-1">
-                        <div><i class="ri-heart-fill"></i></div>
-                    </div>
-                </div>
-            </div>
-            <div class="envelope-base"></div>
-        </div>
-    </article>
-    <script src="script.js"></script>
+<div class="card">
+  <div class="front">
+    <img src="https://cdn.glitch.global/027b9edf-0ff2-4a30-b0cb-c96656824dfb/TET.png?v=1707494984063" alt="Thiệp chúc bạn gái thi tốt">
+    <h1>Chúc Mừng năm mới em bé!</h1>
+  </div>
+  <div class="back">
+    <p>Nhân dịp năm mới đến, anh muốn dành cho em những lời chúc tốt đẹp nhất. Chúc em bé của anh một năm mới tràn đầy niềm vui, hạnh phúc và luôn xinh đẹp rạng ngời. Anh sẽ luôn bên cạnh em, cùng em đi qua mọi khoảnh khắc, Năm sau hãy nắm chặt tay nhau nhé bé.</p>
+    <p>Yêu bé của anh nhấttt! <span class="heart">&#10084;</span></p>
+  </div>
+</div>
+<button class="open-button">Mở thiệp</button>
 </body>
+<script src="script.js"></script>
 </html>
